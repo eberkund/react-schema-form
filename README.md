@@ -8,13 +8,17 @@
 
 * `react-jsonschema-form` replaced with `@react-schema-form/bootstrap` or generally `@react-schema-form/<uiName>`
 * added `props.templates` which contains:
+  * `ErrorListTemplate` (used exclusively in Form component),
   * `FieldTemplate`,
-  * `TitleTemplate`,
-  * `DescriptionTemplate`,
+  * `FieldErrorsTemplate` (used exclusively in FieldTemplate),
+  * `HelpTemplate` (used exclusively in FieldTemplate),
+  * `TitleTemplate` (used in FieldTemplate and ArrayFieldTemplate),
+  * `DescriptionTemplate` (used in FieldTemplate and ArrayFieldTemplate),
+  * `SubmitTemplate` (used in Form component),
   * `ArrayFieldNormalTemplate`,
   * `ArrayFieldFixedTemplate`,
   * `ObjectFieldTemplate`,
-  * `UnsupportedTemplate`
+  * `UnsupportedTemplate` (used in SchemaField and ArrayField)
 * removed `props.ArrayFieldTemplate`(replaced with `props.templates.ArrayFieldNormalTemplate` and `props.templates.ArrayFieldNormalTemplate`)
 * removed `props.FieldTemplate`(replaced with `props.templates.FieldTemplate`)
 * removed `props.ObjectFieldTemplate`(replaced with `props.templates.ObjectFieldTemplate`)
@@ -42,13 +46,22 @@ const templates = {
 * `react-jsonschema-form` splitted into multiple packages:
   * `@react-schema-form/form` - Form component
   * `@react-schema-form/fields` - fields
+    * `SchemaField`,
+    * `ArrayField`,
+    * `ObjectField`,
+    * `StringField`,
+    * `NumberField`,
+    * `BooleanField`,
   * `@react-schema-form/bootstrap-ui` - Bootstrap UI components
+    * contains templates and widgets components
   * `@react-schema-form/bootstrap-form` - **the actual replacement** of `react-jsonschema-form` with almost the same functionality
-  * `@react-schema-form/utils` - common utilities
-  * `@react-schema-form/utils-compatibility` - reusable compatibility tests for base or third party packages
+  * `@react-schema-form/utils` - common utilities (replaced `utils.js`)
+  * `@react-schema-form/utils-compatibility` - reusable compatibility tests for basic or third party packages
   * `@react-schema-form/utils-samples` - samples for playgrounds
-  * `@react-schema-form/utils-validate` - `validate.js`
-  * `@react-schema-form/utils-test` - test utilities
+  * `@react-schema-form/utils-validate` - replaced `validate.js`
+  * `@react-schema-form/utils-test` - test utilities with Jest and `react-testing-library`
+    * `const { getState, getField, ...tools } = renderForm(props)`
+    * `suppressLogs(type, test)`
 * update: Bootstrap 3 -> Bootstrap 4
 * repo was restructured to the monorepo with Lerna and Yarn workspaces
   * packages are in `packages` folder
