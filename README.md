@@ -56,12 +56,12 @@ const templates = {
     * contains Bootstrap UI (templates and widgets components)
     * contains prewired Form with fields, templates and widgets
   * `@react-schema-form/utils` - common utilities (replaced `utils.js`)
-  * `@react-schema-form/utils-compatibility` - reusable compatibility tests for basic or third party packages
-  * `@react-schema-form/utils-samples` - samples for playgrounds
-  * `@react-schema-form/utils-validate` - replaced `validate.js`
-  * `@react-schema-form/utils-test` - test utilities with Jest and `react-testing-library`
-    * `const { getState, getField, ...tools } = renderForm(props)`
-    * `suppressLogs(type, test)`
+    * `@react-schema-form/utils/lib/compatibility` - reusable compatibility tests for basic or third party packages
+    * `@react-schema-form/utils/lib/samples` - samples for playgrounds
+    * `@react-schema-form/utils/lib/validate` - replaced `validate.js`
+    * `@react-schema-form/utils/lib/test-utils` - test utilities with Jest and `react-testing-library`
+      * `const { getState, getField, ...tools } = renderForm(props)`
+      * `suppressLogs(type, test)`
 * update: Bootstrap 3 -> Bootstrap 4
 * repo was restructured to the monorepo with Lerna and Yarn workspaces
   * packages are in `packages` folder

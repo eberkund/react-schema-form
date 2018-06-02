@@ -8,7 +8,9 @@ import {
   toIdSchema,
   setState
 } from '@react-schema-form/utils';
-import validateFormData, { toErrorList } from '@react-schema-form/utils-validate';
+import validateFormData, {
+  toErrorList
+} from '@react-schema-form/utils/lib/validate';
 
 export default class Form extends Component {
   static defaultProps = {

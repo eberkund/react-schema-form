@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@react-schema-form/bootstrap": "^1.0.0",
-    "@react-schema-form/utils-samples": "^1.0.0",
+    "@react-schema-form/utils": "^1.0.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-hot-loader": "^4.2.0",

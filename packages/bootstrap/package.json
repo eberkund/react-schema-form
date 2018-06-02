@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "@react-schema-form/fields": "^1.0.0",
-    "@react-schema-form/form": "^1.0.0"
+    "@react-schema-form/form": "^1.0.0",
+    "source-map-support": "^0.5.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

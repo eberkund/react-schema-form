@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Form from '@react-schema-form/bootstrap';
-import samples from '@react-schema-form/utils-samples';
+import samples from '@react-schema-form/utils/lib/samples';
 
 import {
   Container,

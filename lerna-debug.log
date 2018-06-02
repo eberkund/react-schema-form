@@ -1,30 +1,1169 @@
-0 silly input []
-1 silly flags { _: [ 'bootstrap' ],
+0 silly input [ 'build' ]
+1 silly flags { _: [ 'run' ],
 1 silly flags   'reject-cycles': false,
 1 silly flags   rejectCycles: false,
+1 silly flags   parallel: true,
+1 silly flags   script: 'build',
 1 silly flags   args: [] }
 2 verbose rootPath C:\Users\m24ma\Documents\projekty\libs\react-schema-form
 3 info version 2.11.0
 4 silly existsSync C:\Users\m24ma\Documents\projekty\libs\react-schema-form\VERSION
 5 silly initialize attempt
-6 silly npmConfig { registry: undefined,
-6 silly npmConfig   npmClient: 'yarn',
-6 silly npmConfig   npmClientArgs: undefined,
-6 silly npmConfig   mutex: 'network:42424' }
-7 silly initialize success
-8 silly execute attempt
-9 info Bootstrapping 10 packages
-10 silly installInDirOriginalPackageJson C:\Users\m24ma\Documents\projekty\libs\react-schema-form
-11 silly getExecOpts { cwd:
-11 silly getExecOpts    'C:\\Users\\m24ma\\Documents\\projekty\\libs\\react-schema-form' }
-12 silly installInDir [ 'yarn',
-12 silly installInDir   [ 'install', '--mutex', 'network:42424', '--non-interactive' ] ]
-13 error execute callback with error
-14 error Error: Command failed: yarn install --mutex network:42424 --non-interactive
-14 error (node:60540) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-14 error error Couldn't find package "@react-schema-form/components-bootstrap@^1.0.0" required by "@react-schema-form/bootstrap@1.0.0" on the "npm" registry.
-14 error yarn install v1.7.0
-14 error [1/4] Resolving packages...
-14 error info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
-14 error
-14 error     at Promise.all.then.arr (C:\Users\m24ma\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:236:11)
+6 silly initialize success
+7 silly execute attempt
+8 info run in 5 package(s): npm run build
+9 silly runScriptInPackageStreaming [ 'build', [], '@react-schema-form/bootstrap' ]
+10 silly getExecOpts { cwd:
+10 silly getExecOpts    'C:\\Users\\m24ma\\Documents\\projekty\\libs\\react-schema-form\\packages\\bootstrap' }
+11 silly runScriptInPackageStreaming [ 'build', [], '@react-schema-form/fields' ]
+12 silly getExecOpts { cwd:
+12 silly getExecOpts    'C:\\Users\\m24ma\\Documents\\projekty\\libs\\react-schema-form\\packages\\fields' }
+13 silly runScriptInPackageStreaming [ 'build', [], '@react-schema-form/form' ]
+14 silly getExecOpts { cwd:
+14 silly getExecOpts    'C:\\Users\\m24ma\\Documents\\projekty\\libs\\react-schema-form\\packages\\form' }
+15 silly runScriptInPackageStreaming [ 'build', [], '@react-schema-form/utils' ]
+16 silly getExecOpts { cwd:
+16 silly getExecOpts    'C:\\Users\\m24ma\\Documents\\projekty\\libs\\react-schema-form\\packages\\utils' }
+17 silly runScriptInPackageStreaming [ 'build', [], 'bootstrap-playground' ]
+18 silly getExecOpts { cwd:
+18 silly getExecOpts    'C:\\Users\\m24ma\\Documents\\projekty\\libs\\react-schema-form\\examples\\bootstrap-playground' }
+19 error execute callback with error
+20 error Error: Command failed: yarn run build
+20 error ./src/components/App.js
+20 error Module not found: Error: Can't resolve '@react-schema-form/utils/samples' in 'C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\src\components'
+20 error resolve '@react-schema-form/utils/samples' in 'C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\src\components'
+20 error   Parsed request is a module
+20 error   using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./src/components)
+20 error     Field 'browser' doesn't contain a valid alias configuration
+20 error   after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./src/components)
+20 error     resolve as module
+20 error       C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\src\components\node_modules doesn't exist or is not a directory
+20 error       C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\src\node_modules doesn't exist or is not a directory
+20 error       C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\node_modules doesn't exist or is not a directory
+20 error       C:\Users\m24ma\Documents\projekty\libs\node_modules doesn't exist or is not a directory
+20 error       C:\Users\m24ma\Documents\projekty\node_modules doesn't exist or is not a directory
+20 error       C:\Users\m24ma\Documents\node_modules doesn't exist or is not a directory
+20 error       C:\Users\node_modules doesn't exist or is not a directory
+20 error       C:\node_modules doesn't exist or is not a directory
+20 error       looking for modules in C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules
+20 error         using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./node_modules)
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error         after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./node_modules)
+20 error           using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./node_modules/@react-schema-form/utils/samples)
+20 error             no extension
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error             .js
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.js doesn't exist
+20 error             .jsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.jsx doesn't exist
+20 error             .vue
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.vue doesn't exist
+20 error             .ts
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.ts doesn't exist
+20 error             .tsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.tsx doesn't exist
+20 error             .mjs
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.mjs doesn't exist
+20 error             .json
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.json doesn't exist
+20 error             as directory
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error       looking for modules in C:\Users\m24ma\node_modules
+20 error         No description file found
+20 error         Field 'browser' doesn't contain a valid alias configuration
+20 error         No description file found
+20 error         no extension
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error         .js
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.js doesn't exist
+20 error         .jsx
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.jsx doesn't exist
+20 error         .vue
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.vue doesn't exist
+20 error         .ts
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.ts doesn't exist
+20 error         .tsx
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.tsx doesn't exist
+20 error         .mjs
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.mjs doesn't exist
+20 error         .json
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.json doesn't exist
+20 error         as directory
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error       looking for modules in C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules
+20 error         using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\package.json (relative path: ./node_modules)
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error         after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\package.json (relative path: ./node_modules)
+20 error           using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\package.json (relative path: ./samples)
+20 error             no extension
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./samples)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error             .js
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./samples.js)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.js doesn't exist
+20 error             .jsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./samples.jsx)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.jsx doesn't exist
+20 error             .vue
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./samples.vue)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.vue doesn't exist
+20 error             .ts
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./samples.ts)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.ts doesn't exist
+20 error             .tsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./samples.tsx)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.tsx doesn't exist
+20 error             .mjs
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./samples.mjs)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.mjs doesn't exist
+20 error             .json
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./samples.json)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.json doesn't exist
+20 error             as directory
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error       looking for modules in C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules
+20 error         using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./node_modules)
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error         after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./node_modules)
+20 error           using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./node_modules/@react-schema-form/utils/samples)
+20 error             no extension
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error             .js
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.js doesn't exist
+20 error             .jsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.jsx doesn't exist
+20 error             .vue
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.vue doesn't exist
+20 error             .ts
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.ts doesn't exist
+20 error             .tsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.tsx doesn't exist
+20 error             .mjs
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.mjs doesn't exist
+20 error             .json
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.json doesn't exist
+20 error             as directory
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error       looking for modules in C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules
+20 error         using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\package.json (relative path: ./node_modules)
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error         after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\package.json (relative path: ./node_modules)
+20 error           using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\package.json (relative path: ./node_modules/@react-schema-form/utils/samples)
+20 error             no extension
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error             .js
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.js doesn't exist
+20 error             .jsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.jsx doesn't exist
+20 error             .vue
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.vue doesn't exist
+20 error             .ts
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.ts doesn't exist
+20 error             .tsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.tsx doesn't exist
+20 error             .mjs
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.mjs doesn't exist
+20 error             .json
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.json doesn't exist
+20 error             as directory
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error       looking for modules in C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules
+20 error         using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\package.json (relative path: ./node_modules)
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error         after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\package.json (relative path: ./node_modules)
+20 error           using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\package.json (relative path: ./node_modules/@react-schema-form/utils/samples)
+20 error             no extension
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error             .js
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.js doesn't exist
+20 error             .jsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.jsx doesn't exist
+20 error             .vue
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.vue doesn't exist
+20 error             .ts
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.ts doesn't exist
+20 error             .tsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.tsx doesn't exist
+20 error             .mjs
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.mjs doesn't exist
+20 error             .json
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.json doesn't exist
+20 error             as directory
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples doesn't exist
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\src\components\node_modules]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\src\node_modules]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\node_modules]
+20 error [C:\Users\m24ma\Documents\projekty\libs\node_modules]
+20 error [C:\Users\m24ma\Documents\projekty\node_modules]
+20 error [C:\Users\m24ma\Documents\node_modules]
+20 error [C:\Users\node_modules]
+20 error [C:\node_modules]
+20 error [C:\Users\m24ma\node_modules\package.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\samples\package.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.mjs]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\samples.json]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\samples.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\samples]
+20 error  @ ./src/components/App.js 15:0-55
+20 error  @ ./src/index.js
+20 error  @ multi ./src/index
+20 error C:/Users/m24ma/Documents/projekty/libs/react-schema-form/packages/form/lib/components/Form.js
+20 error Module not found: Error: Can't resolve '@react-schema-form/utils/validate' in 'C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\lib\components'
+20 error resolve '@react-schema-form/utils/validate' in 'C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\lib\components'
+20 error   Parsed request is a module
+20 error   using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\package.json (relative path: ./lib/components)
+20 error     Field 'browser' doesn't contain a valid alias configuration
+20 error   after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\package.json (relative path: ./lib/components)
+20 error     resolve as module
+20 error       C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\lib\components\node_modules doesn't exist or is not a directory
+20 error       C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\lib\node_modules doesn't exist or is not a directory
+20 error       C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\node_modules doesn't exist or is not a directory
+20 error       C:\Users\m24ma\Documents\projekty\libs\node_modules doesn't exist or is not a directory
+20 error       C:\Users\m24ma\Documents\projekty\node_modules doesn't exist or is not a directory
+20 error       C:\Users\m24ma\Documents\node_modules doesn't exist or is not a directory
+20 error       C:\Users\node_modules doesn't exist or is not a directory
+20 error       C:\node_modules doesn't exist or is not a directory
+20 error       looking for modules in C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules
+20 error         using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\package.json (relative path: ./node_modules)
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error         after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\package.json (relative path: ./node_modules)
+20 error           using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\package.json (relative path: ./node_modules/@react-schema-form/utils/validate)
+20 error             no extension
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error             .js
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.js doesn't exist
+20 error             .jsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.jsx doesn't exist
+20 error             .vue
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.vue doesn't exist
+20 error             .ts
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.ts doesn't exist
+20 error             .tsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.tsx doesn't exist
+20 error             .mjs
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.mjs doesn't exist
+20 error             .json
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.json doesn't exist
+20 error             as directory
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error       looking for modules in C:\Users\m24ma\node_modules
+20 error         No description file found
+20 error         Field 'browser' doesn't contain a valid alias configuration
+20 error         No description file found
+20 error         no extension
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error         .js
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.js doesn't exist
+20 error         .jsx
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.jsx doesn't exist
+20 error         .vue
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.vue doesn't exist
+20 error         .ts
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.ts doesn't exist
+20 error         .tsx
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.tsx doesn't exist
+20 error         .mjs
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.mjs doesn't exist
+20 error         .json
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.json doesn't exist
+20 error         as directory
+20 error           C:\Users\m24ma\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error       looking for modules in C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules
+20 error         using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\package.json (relative path: ./node_modules)
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error         after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\package.json (relative path: ./node_modules)
+20 error           using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\package.json (relative path: ./validate)
+20 error             no extension
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./validate)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error             .js
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./validate.js)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.js doesn't exist
+20 error             .jsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./validate.jsx)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.jsx doesn't exist
+20 error             .vue
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./validate.vue)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.vue doesn't exist
+20 error             .ts
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./validate.ts)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.ts doesn't exist
+20 error             .tsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./validate.tsx)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.tsx doesn't exist
+20 error             .mjs
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./validate.mjs)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.mjs doesn't exist
+20 error             .json
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               resolved symlink to C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json
+20 error                 using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\package.json (relative path: ./validate.json)
+20 error                   no extension
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json doesn't exist
+20 error                   .js
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.js doesn't exist
+20 error                   .jsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.jsx doesn't exist
+20 error                   .vue
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.vue doesn't exist
+20 error                   .ts
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.ts doesn't exist
+20 error                   .tsx
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.tsx doesn't exist
+20 error                   .mjs
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.mjs doesn't exist
+20 error                   .json
+20 error                     Field 'browser' doesn't contain a valid alias configuration
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.json doesn't exist
+20 error                   as directory
+20 error                     C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json doesn't exist
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.json doesn't exist
+20 error             as directory
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error       looking for modules in C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules
+20 error         using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./node_modules)
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error         after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./node_modules)
+20 error           using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\package.json (relative path: ./node_modules/@react-schema-form/utils/validate)
+20 error             no extension
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error             .js
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.js doesn't exist
+20 error             .jsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.jsx doesn't exist
+20 error             .vue
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.vue doesn't exist
+20 error             .ts
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.ts doesn't exist
+20 error             .tsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.tsx doesn't exist
+20 error             .mjs
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.mjs doesn't exist
+20 error             .json
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.json doesn't exist
+20 error             as directory
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error       looking for modules in C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules
+20 error         using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\package.json (relative path: ./node_modules)
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error         after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\package.json (relative path: ./node_modules)
+20 error           using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\package.json (relative path: ./node_modules/@react-schema-form/utils/validate)
+20 error             no extension
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error             .js
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.js doesn't exist
+20 error             .jsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.jsx doesn't exist
+20 error             .vue
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.vue doesn't exist
+20 error             .ts
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.ts doesn't exist
+20 error             .tsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.tsx doesn't exist
+20 error             .mjs
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.mjs doesn't exist
+20 error             .json
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.json doesn't exist
+20 error             as directory
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error       looking for modules in C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules
+20 error         using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\package.json (relative path: ./node_modules)
+20 error           Field 'browser' doesn't contain a valid alias configuration
+20 error         after using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\package.json (relative path: ./node_modules)
+20 error           using description file: C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\package.json (relative path: ./node_modules/@react-schema-form/utils/validate)
+20 error             no extension
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error             .js
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.js doesn't exist
+20 error             .jsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.jsx doesn't exist
+20 error             .vue
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.vue doesn't exist
+20 error             .ts
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.ts doesn't exist
+20 error             .tsx
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.tsx doesn't exist
+20 error             .mjs
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.mjs doesn't exist
+20 error             .json
+20 error               Field 'browser' doesn't contain a valid alias configuration
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.json doesn't exist
+20 error             as directory
+20 error               C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate doesn't exist
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\lib\components\node_modules]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\lib\node_modules]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\node_modules]
+20 error [C:\Users\m24ma\Documents\projekty\libs\node_modules]
+20 error [C:\Users\m24ma\Documents\projekty\node_modules]
+20 error [C:\Users\m24ma\Documents\node_modules]
+20 error [C:\Users\node_modules]
+20 error [C:\node_modules]
+20 error [C:\Users\m24ma\node_modules\package.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\validate\package.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\form\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.mjs]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\validate.json]
+20 error [C:\Users\m24ma\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\packages\utils\validate.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\examples\bootstrap-playground\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\web\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.js]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.jsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.vue]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.ts]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.tsx]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.mjs]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate.json]
+20 error [C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\@neutrinojs\react\node_modules\@react-schema-form\utils\validate]
+20 error  @ C:/Users/m24ma/Documents/projekty/libs/react-schema-form/packages/form/lib/components/Form.js 13:0-82
+20 error  @ C:/Users/m24ma/Documents/projekty/libs/react-schema-form/packages/form/lib/index.js
+20 error  @ C:/Users/m24ma/Documents/projekty/libs/react-schema-form/packages/bootstrap/lib/components/Form.js
+20 error  @ C:/Users/m24ma/Documents/projekty/libs/react-schema-form/packages/bootstrap/lib/index.js
+20 error  @ ./src/components/App.js
+20 error  @ ./src/index.js
+20 error  @ multi ./src/index
+20 error error Command failed with exit code 1.
+20 error
+20 error $ neutrino build --use ../../.neutrinorc.js
+20 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+20 error
+20 error     at Promise.all.then.arr (C:\Users\m24ma\Documents\projekty\libs\react-schema-form\node_modules\lerna\node_modules\execa\index.js:236:11)
