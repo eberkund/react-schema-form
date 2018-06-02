@@ -23,7 +23,7 @@
   * `@react-schema-form/form` - Form component
   * `@react-schema-form/fields` - fields
   * `@react-schema-form/bootstrap-ui` - Bootstrap UI components
-  * `@react-schema-form/bootstrap-form` - **the actual replacement** of `react-jsonschema-form` with almost the same functionality
+  * `@react-schema-form/bootstrap-form` - **the actual replacement** of `react-jsonschema-form` with almost the same functionality and newer Bootstrap 4
   * `@react-schema-form/utils` - common utilities
   * `@react-schema-form/utils-compatibility` - reusable compatibility tests for base or third party packages
   * `@react-schema-form/utils-samples` - samples for playgrounds
