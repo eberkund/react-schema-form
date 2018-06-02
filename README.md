@@ -1,4 +1,4 @@
-# react-schema-form
+# React Schema Form
 
 [Playground](http://react-schema-form-bootstrap.surge.sh) with React Schema Form - Bootstrap 4
 
@@ -65,6 +65,50 @@
 
 * create Redux version `@react-redux-schema-form`
 * extends with debounce
+
+## Development
+
+* requirements: Node.js and Yarn (uses Yarn workspaces)
+
+### Dependencies
+
+At the root of the repository:
+
+```
+$ yarn install
+```
+
+or
+
+```
+$ lerna bootstrap
+```
+
+### Scripts
+
+Start development:
+
+```
+$ yarn start
+```
+
+Build for production/distribution:
+
+```
+$ yarn build
+```
+
+Test all packages:
+
+```
+$ yarn test
+```
+
+TDD development:
+
+```
+$ yarn tdd
+```
 
 [![Build Status](https://travis-ci.org/mozilla-services/react-jsonschema-form.svg)](https://travis-ci.org/mozilla-services/react-jsonschema-form)
 
