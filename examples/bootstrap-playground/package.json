@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "bootstrap-playground",
+  "version": "1.0.0",
+  "description": "React JSON Schema Form - Playground",
+  "license": "MIT",
+  "scripts": {
+    "start": "neutrino start --use ../../.neutrinorc.js",
+    "build": "neutrino build --use ../../.neutrinorc.js"
+  },
+  "devDependencies": {
+    "neutrino": "^8.2.3"
+  },
+  "dependencies": {
+    "@react-schema-form/bootstrap": "^1.0.0",
+    "@react-schema-form/utils-samples": "^1.0.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-hot-loader": "^4.2.0",
+    "react-router-dom": "^4.2.2"
+  }
+}
