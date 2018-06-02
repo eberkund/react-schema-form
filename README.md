@@ -18,7 +18,7 @@
 * removed `props.ArrayFieldTemplate`(replaced with `props.templates.ArrayFieldNormalTemplate` and `props.templates.ArrayFieldNormalTemplate`)
 * removed `props.FieldTemplate`(replaced with `props.templates.FieldTemplate`)
 * removed `props.ObjectFieldTemplate`(replaced with `props.templates.ObjectFieldTemplate`)
-* added support for ui:{templateComponent}
+* added support for individual templates:
 
 ```js
 const uiSchema = {
