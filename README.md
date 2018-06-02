@@ -94,7 +94,7 @@ const templates = {
 
 ## Development
 
-* requirements: Node.js and Yarn (uses Yarn workspaces)
+* requirements: Node.js (I use v10.3.0) and Yarn (uses Yarn workspaces so you need v1.0.0 at least)
 
 ### Dependencies
 
