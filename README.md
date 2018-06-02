@@ -1,5 +1,7 @@
 # react-schema-form
 
+[Playground](http://react-schema-form-bootstrap.surge.sh) with React Schema Form - Bootstrap 4
+
 # It's still **WIP**
 
 ## Changes in API:
@@ -60,6 +62,7 @@
   * [ ] settings for debugging in VS Code and Chrome (optional)
 
 ## Future:
+
 * create Redux version `@react-redux-schema-form`
 * extends with debounce
 
