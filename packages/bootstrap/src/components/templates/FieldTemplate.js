@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const REQUIRED_FIELD_SYMBOL = '*';
+export const REQUIRED_FIELD_SYMBOL = '*';
 
 /**
  * @typedef {object} Props

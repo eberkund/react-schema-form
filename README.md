@@ -52,9 +52,9 @@ const templates = {
     * `StringField`,
     * `NumberField`,
     * `BooleanField`,
-  * `@react-schema-form/bootstrap-ui` - Bootstrap UI components
-    * contains templates and widgets components
-  * `@react-schema-form/bootstrap-form` - **the actual replacement** of `react-jsonschema-form` with almost the same functionality
+  * `@react-schema-form/bootstrap` - **the actual replacement** of `react-jsonschema-form` with almost the same functionality
+    * contains Bootstrap UI (templates and widgets components)
+    * contains prewired Form with fields, templates and widgets
   * `@react-schema-form/utils` - common utilities (replaced `utils.js`)
   * `@react-schema-form/utils-compatibility` - reusable compatibility tests for basic or third party packages
   * `@react-schema-form/utils-samples` - samples for playgrounds

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const REQUIRED_FIELD_SYMBOL = '*';
+import { REQUIRED_FIELD_SYMBOL } from './FieldTemplate';
 
 const TitleTemplate = props => {
   const { id, title, required } = props;
