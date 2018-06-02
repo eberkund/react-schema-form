@@ -1,5 +1,12 @@
 {
+  "name": "react-schema-form",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React-Schema-Form/react-schema-form.git"
+  },
+  "author": "Matej Mazur <matej.mazur@mail.com>",
   "workspaces": [
     "packages/*",
     "examples/*"
@@ -25,5 +32,8 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "webpack-node-externals": "^1.7.2"
+  },
+  "engines": {
+    "yarn": ">=1.0.0"
   }
 }
