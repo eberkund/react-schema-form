@@ -18,6 +18,24 @@
 * removed `props.ArrayFieldTemplate`(replaced with `props.templates.ArrayFieldNormalTemplate` and `props.templates.ArrayFieldNormalTemplate`)
 * removed `props.FieldTemplate`(replaced with `props.templates.FieldTemplate`)
 * removed `props.ObjectFieldTemplate`(replaced with `props.templates.ObjectFieldTemplate`)
+* added support for ui:{templateComponent}
+
+```js
+const uiSchema = {
+  foo: {
+    'ui:FieldTemplate': 'CustomFieldTemplate',
+    'ui:ArrayFieldTemplate': 'CustomArrayFieldTemplate',
+    'ui:ObjectFieldTemplate': 'CustomObjectFieldTemplate'
+  }
+};
+const templates = {
+  CustomFieldTemplate,
+  CustomArrayFieldTemplate,
+  CustomObjectFieldTemplate
+}
+
+<Form templates={templates} uiSchema={uiSchema} {...} />
+```
 
 ## Internal changes:
 
@@ -25,12 +43,13 @@
   * `@react-schema-form/form` - Form component
   * `@react-schema-form/fields` - fields
   * `@react-schema-form/bootstrap-ui` - Bootstrap UI components
-  * `@react-schema-form/bootstrap-form` - **the actual replacement** of `react-jsonschema-form` with almost the same functionality and newer Bootstrap 4
+  * `@react-schema-form/bootstrap-form` - **the actual replacement** of `react-jsonschema-form` with almost the same functionality
   * `@react-schema-form/utils` - common utilities
   * `@react-schema-form/utils-compatibility` - reusable compatibility tests for base or third party packages
   * `@react-schema-form/utils-samples` - samples for playgrounds
   * `@react-schema-form/utils-validate` - `validate.js`
   * `@react-schema-form/utils-test` - test utilities
+* update: Bootstrap 3 -> Bootstrap 4
 * repo was restructured to the monorepo with Lerna and Yarn workspaces
   * packages are in `packages` folder
   * playgrounds were moved into `examples` folder
