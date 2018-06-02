@@ -15,16 +15,10 @@ module.exports = neutrino => {
     ]);
   } else {
     /**
-     * Playgrounds are private
+     * Only playgrounds are with pkg.private: true
      */
     if (pkg.private) {
-      neutrino.use([
-        '@neutrinojs/react',
-        {
-          babel: { presets: ['react-app'] },
-          html: { title: pkg.description }
-        }
-      ]);
+      neutrino.use(['@neutrinojs/react', { html: { title: pkg.description } }]);
     } else {
       /**
        * Components are tested together in @react-schema-form/playground
@@ -37,13 +31,7 @@ module.exports = neutrino => {
        *
        * !REQUIRED!: key `libName` in package.json
        */
-      neutrino.use([
-        '@neutrinojs/library',
-        {
-          name: pkg.variable,
-          babel: { presets: ['react-app'] }
-        }
-      ]);
+      neutrino.use(['@neutrinojs/library', { name: pkg.variable }]);
 
       /**
        * It solves monorepo issue with parent node_modules
