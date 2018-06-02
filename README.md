@@ -77,15 +77,10 @@ const templates = {
 * [ ] CodeMirror in playground
 * [ ] READMEs (root and for each package in `packages` folder)
   * [ ] root (this)
-  * [ ] bootstrap-form
-  * [ ] bootstrap-ui
+  * [ ] bootstrap
   * [ ] fields
   * [ ] form
   * [ ] utils
-  * [ ] utils-compatibility
-  * [ ] utils-samples
-  * [ ] utils-test
-  * [ ] utils-validate
 * [ ] repo related
   * [ ] websites
   * [ ] publishing
