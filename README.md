@@ -55,6 +55,8 @@ const templates = {
   * playgrounds were moved into `examples` folder
 * development:
   * uses Neutrino (compiles for UMD builds) and babel-cli (compiles for `package.module`)
+  * all packages can be used in `<script>...</script>` and their global variable names are under `package.variable`
+  * playgrounds HTML titles are read from the `package.description`
 
 ## TODOs:
 
@@ -79,6 +81,11 @@ const templates = {
   * [ ] Travis
   * [ ] `.npmignore`
   * [ ] settings for debugging in VS Code and Chrome (optional)
+* [ ] other UI components
+  * [ ] Material
+  * [ ] Ant
+  * [ ] UI with CSS in JS and with the option of higher CSS specificity (for example including in website - isolating styles)
+  * [ ] ...
 
 ## Future:
 
