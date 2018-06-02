@@ -20,7 +20,10 @@ module.exports = neutrino => {
     if (pkg.private) {
       neutrino.use([
         '@neutrinojs/react',
-        { babel: { presets: ['react-app'] } }
+        {
+          babel: { presets: ['react-app'] },
+          html: { title: pkg.description }
+        }
       ]);
     } else {
       /**
